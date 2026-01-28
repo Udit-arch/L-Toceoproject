@@ -1,0 +1,48 @@
+.checkout-container {
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--retro-cyan);
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border: 1px solid var(--retro-cyan);
+    box-shadow: 10px 10px 0px var(--retro-red);
+}
+
+.form-row {
+    display: flex;
+    gap: 24px;
+}
+
+.form-row mat-form-field {
+    flex: 1;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--retro-text);
+}
+
+/* Custom Mat Styles within local component */
+::ng-deep .mat-mdc-form-field-wrapper {
+    padding-bottom: 0;
+}

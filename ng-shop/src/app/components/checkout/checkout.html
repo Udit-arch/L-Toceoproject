@@ -1,0 +1,81 @@
+<div class="checkout-container">
+    <h2>Checkout</h2>
+
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" class="checkout-form">
+
+        <div class="form-row">
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput formControlName="firstName" placeholder="First Name">
+                @if (checkoutForm.get('firstName')?.invalid && checkoutForm.get('firstName')?.touched) {
+                <mat-error>First Name is required</mat-error>
+                }
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput formControlName="lastName" placeholder="Last Name">
+                @if (checkoutForm.get('lastName')?.invalid && checkoutForm.get('lastName')?.touched) {
+                <mat-error>Last Name is required</mat-error>
+                }
+            </mat-form-field>
+        </div>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" placeholder="Email">
+            @if (checkoutForm.get('email')?.hasError('required')) {
+            <mat-error>Email is required</mat-error>
+            }
+            @if (checkoutForm.get('email')?.hasError('email')) {
+            <mat-error>Please enter a valid email address</mat-error>
+            }
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Address</mat-label>
+            <textarea matInput formControlName="address" placeholder="Shipping Address"></textarea>
+            @if (checkoutForm.get('address')?.invalid && checkoutForm.get('address')?.touched) {
+            <mat-error>Address is required</mat-error>
+            }
+        </mat-form-field>
+
+        <div class="form-row">
+            <mat-form-field appearance="outline">
+                <mat-label>City</mat-label>
+                <input matInput formControlName="city" placeholder="City">
+                @if (checkoutForm.get('city')?.invalid && checkoutForm.get('city')?.touched) {
+                <mat-error>City is required</mat-error>
+                }
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Zip Code</mat-label>
+                <input matInput formControlName="zipCode" placeholder="Zip Code">
+                @if (checkoutForm.get('zipCode')?.hasError('required')) {
+                <mat-error>Zip Code is required</mat-error>
+                }
+                @if (checkoutForm.get('zipCode')?.hasError('pattern')) {
+                <mat-error>Invalid Zip Code</mat-error>
+                }
+            </mat-form-field>
+        </div>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Card Number</mat-label>
+            <input matInput formControlName="cardNumber" placeholder="16-digit Card Number">
+            @if (checkoutForm.get('cardNumber')?.hasError('required')) {
+            <mat-error>Card Number is required</mat-error>
+            }
+            @if (checkoutForm.get('cardNumber')?.hasError('pattern')) {
+            <mat-error>Invalid Card Number</mat-error>
+            }
+        </mat-form-field>
+
+        <div class="actions">
+            <button mat-raised-button color="primary" type="submit" [disabled]="checkoutForm.invalid">PLACE
+                ORDER</button>
+        </div>
+
+    </form>
+</div>

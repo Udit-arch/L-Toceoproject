@@ -1,0 +1,81 @@
+.about-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.glitch {
+    position: relative;
+    color: var(--retro-red);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--retro-cyan);
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--retro-cyan);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.mission {
+    margin-bottom: 60px;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.detail-card {
+    border: 1px solid var(--retro-text);
+    padding: 30px;
+    transition: all 0.3s ease;
+    cursor: default;
+    background: rgba(0, 255, 255, 0.02);
+}
+
+.detail-card mat-icon {
+    transform: scale(2);
+    margin-bottom: 20px;
+    color: var(--retro-text);
+    transition: color 0.3s ease;
+}
+
+.detail-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Hover State / Interactive UI */
+.detail-card.active-card,
+.detail-card:hover {
+    border-color: var(--retro-cyan);
+    box-shadow: 6px 6px 0px var(--retro-red);
+    transform: translateY(-5px);
+    background: rgba(0, 255, 255, 0.05);
+}
+
+.detail-card.active-card mat-icon,
+.detail-card:hover mat-icon {
+    color: var(--retro-cyan);
+}
+
+.cta button {
+    padding: 10px 40px;
+    font-size: 1.5rem;
+}

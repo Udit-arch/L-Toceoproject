@@ -1,0 +1,229 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Sony Walkman TPS-L2",
+      "price": 299.99,
+      "description": "The original portable cassette player. Listen to your mixtapes in style.",
+      "category": "Audio",
+      "imageUrl": "assets/images/walkman.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Apple iPod Classic (6th Gen)",
+      "price": 199.99,
+      "description": "160GB of storage for your entire music library. The iconic click wheel experience.",
+      "category": "Audio",
+      "imageUrl": "assets/images/ipod-classic.png"
+    },
+    {
+      "id": 16,
+      "name": "Apple iPod Mini (Blue)",
+      "price": 99.99,
+      "description": "Compact, colorful, and durable. 4GB of skip-free music.",
+      "category": "Audio",
+      "imageUrl": "assets/images/ipod-mini.png"
+    },
+    {
+      "id": 17,
+      "name": "Creative Zen Vision:M",
+      "price": 85.00,
+      "description": "The alternative choice. Great screen and radio tuner built-in.",
+      "category": "Audio",
+      "imageUrl": "assets/images/zen.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Microsoft Zune 30",
+      "price": 110.00,
+      "description": "Welcome to the social. Robust build and unique interface.",
+      "category": "Audio",
+      "imageUrl": "assets/images/zune.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Sony Discman D-50",
+      "price": 149.99,
+      "description": "The first portable CD player. High fidelity sound on the go.",
+      "category": "Audio",
+      "imageUrl": "assets/images/discman.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Apple iPod Shuffle (1st Gen)",
+      "price": 49.99,
+      "description": "Life is random. The white stick that changed how we listen.",
+      "category": "Audio",
+      "imageUrl": "assets/images/shuffle.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Kanye West - Graduation",
+      "price": 14.99,
+      "description": "Third studio album. Includes 'Stronger' and 'Good Life'. Physical CD.",
+      "category": "Music",
+      "imageUrl": "assets/images/kanye-graduation.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Drake - Take Care",
+      "price": 13.99,
+      "description": "The sophomore classic. Featuring 'Headlines' and 'Marvins Room'.",
+      "category": "Music",
+      "imageUrl": "assets/images/drake-takecare.jpg"
+    },
+    {
+      "id": 26,
+      "name": "John Mayer - Continuum",
+      "price": 12.99,
+      "description": "Blues-rock masterpiece. Includes 'Waiting on the World to Change'.",
+      "category": "Music",
+      "imageUrl": "assets/images/mayer-continuum.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Outkast - Stankonia",
+      "price": 14.99,
+      "description": "Southern hip hop revolution. Features 'Ms. Jackson' and 'B.O.B'.",
+      "category": "Music",
+      "imageUrl": "assets/images/outkast-stankonia.jpg"
+    },
+    {
+      "id": 28,
+      "name": "The Beatles - Abbey Road",
+      "price": 18.99,
+      "description": "The legendary final recording session. 2009 Remastered CD.",
+      "category": "Music",
+      "imageUrl": "assets/images/beatles-abbeyroad.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sony PSP-1000",
+      "price": 149.99,
+      "description": "Portable PlayStation gaming. Includes original UMD drive.",
+      "category": "Consoles",
+      "imageUrl": "assets/images/psp.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Nintendo Game Boy DMG-01",
+      "price": 89.99,
+      "description": "The 8-bit handheld that started it all. Dot matrix stereo sound.",
+      "category": "Consoles",
+      "imageUrl": "assets/images/gameboy.jpg"
+    },
+    {
+      "id": 4,
+      "name": "PlayStation 1 (PS1)",
+      "price": 120.00,
+      "description": "The console that changed gaming forever. DualShock controller included.",
+      "category": "Consoles",
+      "imageUrl": "assets/images/ps1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "PlayStation 2 (PS2)",
+      "price": 150.00,
+      "description": "The best-selling console of all time. DVD playback functionality.",
+      "category": "Consoles",
+      "imageUrl": "assets/images/ps2.jpg"
+    },
+    {
+      "id": 6,
+      "name": "PlayStation 3 (PS3)",
+      "price": 180.00,
+      "description": "High-definition gaming with Blu-ray player built-in.",
+      "category": "Consoles",
+      "imageUrl": "assets/images/ps3.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Grand Theft Auto: San Andreas (PS2)",
+      "price": 29.99,
+      "description": "Welcome to San Andreas. Physical disc, original box art.",
+      "category": "Games",
+      "imageUrl": "assets/images/gta-sa.jpg"
+    },
+    {
+      "id": 8,
+      "name": "God of War II (PS2)",
+      "price": 24.99,
+      "description": "Kratos returns. Epic action adventure on physical disc.",
+      "category": "Games",
+      "imageUrl": "assets/images/gow2.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Uncharted 2: Among Thieves (PS3)",
+      "price": 19.99,
+      "description": "Drake's greatest adventure. Physical Blu-ray disc.",
+      "category": "Games",
+      "imageUrl": "assets/images/uncharted2.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Need for Speed: Most Wanted (PS2)",
+      "price": 35.00,
+      "description": "Become the most wanted. Black Edition physical disc.",
+      "category": "Games",
+      "imageUrl": "assets/images/mw.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Assassin's Creed II (PS3)",
+      "price": 15.99,
+      "description": "Live the life of Ezio Auditore. Physical disc.",
+      "category": "Games",
+      "imageUrl": "assets/images/ac2.jpg"
+    },
+    {
+      "id": 12,
+      "name": "FIFA Street 2 (PS2)",
+      "price": 25.00,
+      "description": "Arcade style football. EA Sports Big classic.",
+      "category": "Games",
+      "imageUrl": "assets/images/fifa.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Canon AE-1 Program",
+      "price": 199.99,
+      "description": "Classic 35mm film camera.",
+      "category": "Photography",
+      "imageUrl": "assets/images/canon.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Polaroid 600",
+      "price": 129.99,
+      "description": "Instant film camera. Point, shoot, and print.",
+      "category": "Photography",
+      "imageUrl": "assets/images/polaroid.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Kodak Portra 400 (5 Pack)",
+      "price": 75.00,
+      "description": "Professional color negative film. Fine grain and natural skin tones.",
+      "category": "Film",
+      "imageUrl": "assets/images/portra.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Fujifilm Superia X-TRA 400",
+      "price": 12.99,
+      "description": "Versatile all-around film. Great for snapshots and daylight.",
+      "category": "Film",
+      "imageUrl": "assets/images/superia.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Ilford HP5 Plus",
+      "price": 9.50,
+      "description": "High speed black and white film. Classic grain and contrast.",
+      "category": "Film",
+      "imageUrl": "assets/images/ilford.jpg"
+    }
+  ],
+  "cart": []
+}

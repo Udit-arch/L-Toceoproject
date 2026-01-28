@@ -1,0 +1,70 @@
+<div class="cart-container">
+    <h2>Shopping Cart</h2>
+
+    @if (cartItems$ | async; as cartItems) {
+    @if (cartItems.length > 0) {
+    <table mat-table [dataSource]="cartItems" class="mat-elevation-z8">
+
+        <!-- Image Column -->
+        <ng-container matColumnDef="imageUrl">
+            <th mat-header-cell *matHeaderCellDef> Image </th>
+            <td mat-cell *matCellDef="let element">
+                <img [src]="element.imageUrl" [alt]="element.name" class="cart-thumb">
+            </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Product </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <!-- Price Column -->
+        <ng-container matColumnDef="price">
+            <th mat-header-cell *matHeaderCellDef> Price </th>
+            <td mat-cell *matCellDef="let element"> {{element.price | currency}} </td>
+        </ng-container>
+
+        <!-- Quantity Column -->
+        <ng-container matColumnDef="quantity">
+            <th mat-header-cell *matHeaderCellDef> Quantity </th>
+            <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+        </ng-container>
+
+        <!-- Total Column -->
+        <ng-container matColumnDef="total">
+            <th mat-header-cell *matHeaderCellDef> Total </th>
+            <td mat-cell *matCellDef="let element"> {{(element.price * element.quantity) | currency}} </td>
+        </ng-container>
+
+        <!-- Actions Column -->
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef> Actions </th>
+            <td mat-cell *matCellDef="let element">
+                <button mat-icon-button color="warn" (click)="removeFromCart(element)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <div class="cart-summary">
+        <h3>Total: {{getTotal() | currency}}</h3>
+        <div class="actions">
+            <button mat-button color="warn" (click)="clearCart()">CLEAR CART</button>
+            <button mat-raised-button color="primary" routerLink="/checkout">CHECKOUT</button>
+        </div>
+    </div>
+
+    } @else {
+    <div class="empty-cart">
+        <mat-icon>shopping_cart</mat-icon>
+        <p>Your cart is empty.</p>
+        <button mat-raised-button color="primary" routerLink="/">START SHOPPING</button>
+    </div>
+    }
+    }
+</div>

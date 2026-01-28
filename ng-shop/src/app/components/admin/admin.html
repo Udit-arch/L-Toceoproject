@@ -1,0 +1,63 @@
+<div class="admin-container">
+    <h2>Add New Product (Admin)</h2>
+
+    <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)" class="admin-form">
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Product Name</mat-label>
+            <input matInput name="name" [(ngModel)]="model.name" required #name="ngModel">
+            @if (name.invalid && (name.dirty || name.touched)) {
+            <mat-error>Name is required</mat-error>
+            }
+        </mat-form-field>
+
+        <div class="form-row">
+            <mat-form-field appearance="outline">
+                <mat-label>Price</mat-label>
+                <input matInput type="number" name="price" [(ngModel)]="model.price" required min="0.01"
+                    #price="ngModel">
+                <span matTextPrefix>$&nbsp;</span>
+                @if (price.invalid && (price.dirty || price.touched)) {
+                <mat-error>Valid price is required</mat-error>
+                }
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Category</mat-label>
+                <mat-select name="category" [(ngModel)]="model.category" required #category="ngModel">
+                    @for (cat of categories; track cat) {
+                    <mat-option [value]="cat">{{cat}}</mat-option>
+                    }
+                </mat-select>
+                @if (category.invalid && (category.dirty || category.touched)) {
+                <mat-error>Category is required</mat-error>
+                }
+            </mat-form-field>
+        </div>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Description</mat-label>
+            <textarea matInput name="description" [(ngModel)]="model.description" required rows="4"
+                #desc="ngModel"></textarea>
+            @if (desc.invalid && (desc.dirty || desc.touched)) {
+            <mat-error>Description is required</mat-error>
+            }
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Image URL</mat-label>
+            <input matInput name="imageUrl" [(ngModel)]="model.imageUrl" required>
+        </mat-form-field>
+
+        <div class="preview" *ngIf="model.imageUrl">
+            <p>Image Preview:</p>
+            <img [src]="model.imageUrl" alt="Preview" style="max-height: 100px;">
+        </div>
+
+        <div class="actions">
+            <button mat-raised-button color="primary" type="submit" [disabled]="productForm.invalid">ADD
+                PRODUCT</button>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,44 @@
+<div class="about-container">
+    <section class="hero">
+        <h1>Preserving the <span class="glitch" data-text="Legacy">Legacy</span></h1>
+        <p class="subtitle">OCEO: Where the analog soul meets the digital afterlife.</p>
+    </section>
+
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>
+            In an age of streaming and ephemeral licenses, owning physical media is an act of rebellion.
+            We are dedicated to the preservation of gaming history, auditory purity, and the tactile experience of
+            technology.
+        </p>
+        <p>
+            From the click of a shutter to the spin of a UMD, every item in our collection has been restored
+            to ensure it survives for the next generation of players and listeners.
+        </p>
+    </section>
+
+    <div class="details-grid">
+        <div class="detail-card" (mouseenter)="hoverCard(1)" (mouseleave)="hoverCard(0)"
+            [class.active-card]="activeCard === 1">
+            <mat-icon>save</mat-icon>
+            <h3>Archival Quality</h3>
+            <p>Every console is cleaned, tested, and capacitor-checked.</p>
+        </div>
+        <div class="detail-card" (mouseenter)="hoverCard(2)" (mouseleave)="hoverCard(0)"
+            [class.active-card]="activeCard === 2">
+            <mat-icon>history</mat-icon>
+            <h3>Historical Value</h3>
+            <p>Curated selections of titles that defined genres and generations.</p>
+        </div>
+        <div class="detail-card" (mouseenter)="hoverCard(3)" (mouseleave)="hoverCard(0)"
+            [class.active-card]="activeCard === 3">
+            <mat-icon>recycling</mat-icon>
+            <h3>Sustainability</h3>
+            <p>Keeping electronics out of landfills by giving them a second life.</p>
+        </div>
+    </div>
+
+    <div class="cta">
+        <button mat-raised-button color="primary" routerLink="/">EXPLORE THE ARCHIVE</button>
+    </div>
+</div>
