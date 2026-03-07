@@ -1,0 +1,102 @@
+.customer-layout {
+    min-height: 100vh;
+    background-color: #F8FAFC;
+    color: #0F172A;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E2E8F0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+    background-color: var(--accent-cyan);
+    color: #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.brand h1 {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #0F172A;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: #64748B;
+    text-decoration: none;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.nav-links a:hover {
+    color: #0F172A;
+}
+
+.nav-links a.active {
+    color: var(--accent-cyan-hover);
+    border-bottom-color: var(--accent-cyan-hover);
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-name {
+    font-weight: 500;
+    color: #475569;
+}
+
+.logout-btn {
+    background-color: #F1F5F9;
+    color: #475569;
+    border: 1px solid #E2E8F0;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.logout-btn:hover {
+    background-color: #E2E8F0;
+    color: #0F172A;
+}
+
+.customer-content {
+    flex: 1;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}

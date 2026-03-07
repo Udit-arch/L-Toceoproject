@@ -1,0 +1,72 @@
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-section h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+}
+
+.header-section p {
+    color: #64748B;
+    margin: 0 0 16px 0;
+}
+
+.legend {
+    display: flex;
+    gap: 16px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot.booked {
+    background-color: #EF4444;
+}
+
+.dot.pending {
+    background-color: #F59E0B;
+}
+
+.calendar-wrapper {
+    background-color: #FFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+::ng-deep .demo-inline-calendar-card {
+    width: 100%;
+}
+
+::ng-deep .mat-calendar {
+    width: 100% !important;
+}
+
+::ng-deep .booked-date {
+    background-color: rgba(239, 68, 68, 0.15);
+    border-radius: 100%;
+}
+
+::ng-deep .pending-date {
+    background-color: rgba(245, 158, 11, 0.15);
+    border-radius: 100%;
+}
